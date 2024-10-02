@@ -24,5 +24,19 @@ public class Main {
                 .build();
         System.out.println(house);
         System.out.println();
+
+        //Prototype Pattern
+        System.out.println("Prototype Pattern: ");
+        Product originalProduct = new Product("Laptop", 1200);
+        Product clonedProduct = null;
+        try {
+            clonedProduct = originalProduct.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
+
+        System.out.println(originalProduct);
+        System.out.println(clonedProduct);
+        System.out.println();
     }
 }
