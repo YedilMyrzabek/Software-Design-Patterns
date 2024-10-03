@@ -5,8 +5,14 @@ import org.example.AbstractFactoryPattern.Interface.Button;
 import org.example.AbstractFactoryPattern.Interface.Window;
 import org.example.AbstractFactoryPattern.WindowsFactory;
 import org.example.BuilderPattern.House;
+import org.example.FactoryMethodPattern.DroneFactory;
+import org.example.FactoryMethodPattern.ShipFactory;
+import org.example.FactoryMethodPattern.TransportFactory;
+import org.example.FactoryMethodPattern.TruckFactory;
 import org.example.PrototypePattern.Product;
 import org.example.SingletonPattern.Logger;
+
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -49,5 +55,33 @@ public class Main {
         Window window = factory.createWindow();
         button.click();
         window.open();
+        System.out.println();
+
+        //Factory Method Pattern
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Select delivery method (only digigt): ");
+        System.out.println("1. land");
+        System.out.println("2. water");
+        System.out.println("3. air");
+        int num = sc.nextInt();
+
+        TransportFactory transportFactory;
+
+        switch (num) {
+            case 1:
+                transportFactory = new TruckFactory();
+                break;
+            case 2:
+                transportFactory = new ShipFactory();
+                break;
+            case 3:
+                transportFactory = new DroneFactory();
+                break;
+            default:
+                System.out.println("Invalid Input (write only digit)");
+                return;
+        }
+
+        transportFactory.productDelivery();
     }
 }

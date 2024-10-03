@@ -1,6 +1,6 @@
 package org.example.AbstractFactoryPattern.Interface;
 
 public interface AbstractFactory {
-    Button createButton();
-    Window createWindow();
+    public Button createButton();
+    public Window createWindow();
 }
