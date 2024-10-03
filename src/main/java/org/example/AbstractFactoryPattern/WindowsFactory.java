@@ -7,11 +7,11 @@ import org.example.AbstractFactoryPattern.Interface.Window;
 public class WindowsFactory implements AbstractFactory {
     @Override
     public Button createButton() {
-        return new WindowsButton();
+        return new WindowsButton(); //Create a Windows button
     }
 
     @Override
     public Window createWindow() {
-        return new WindowsWindow();
+        return new WindowsWindow(); //Create a Windows window
     }
 }

@@ -58,24 +58,25 @@ public class Main {
         System.out.println();
 
         //Factory Method Pattern
+        //
         Scanner sc = new Scanner(System.in);
         System.out.println("Select delivery method (only digigt): ");
-        System.out.println("1. land");
-        System.out.println("2. water");
-        System.out.println("3. air");
+        System.out.println("1. land delivery");
+        System.out.println("2. water delivery");
+        System.out.println("3. air delivery");
         int num = sc.nextInt();
 
         TransportFactory transportFactory;
 
         switch (num) {
             case 1:
-                transportFactory = new TruckFactory();
+                transportFactory = new TruckFactory(); // Returns a Truck for delivery in land
                 break;
             case 2:
-                transportFactory = new ShipFactory();
+                transportFactory = new ShipFactory();  // Returns a Ship for delivery in water
                 break;
             case 3:
-                transportFactory = new DroneFactory();
+                transportFactory = new DroneFactory();  // Returns a Drone for delivery in air
                 break;
             default:
                 System.out.println("Invalid Input (write only digit)");

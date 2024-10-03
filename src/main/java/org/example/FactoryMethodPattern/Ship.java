@@ -1,5 +1,6 @@
 package org.example.FactoryMethodPattern;
 
+//Ship implements from Transport for land delivering
 public class Ship implements Transport{
     @Override
     public void deliver() {
