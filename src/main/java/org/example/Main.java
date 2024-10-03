@@ -1,5 +1,9 @@
 package org.example;
 
+import org.example.AbstractFactoryPattern.Interface.AbstractFactory;
+import org.example.AbstractFactoryPattern.Interface.Button;
+import org.example.AbstractFactoryPattern.Interface.Window;
+import org.example.AbstractFactoryPattern.WindowsFactory;
 import org.example.BuilderPattern.House;
 import org.example.PrototypePattern.Product;
 import org.example.SingletonPattern.Logger;
@@ -38,5 +42,12 @@ public class Main {
         System.out.println(originalProduct);
         System.out.println(clonedProduct);
         System.out.println();
+
+        //AbstractFactory
+        AbstractFactory factory = new WindowsFactory();
+        Button button = factory.createButton();
+        Window window = factory.createWindow();
+        button.click();
+        window.open();
     }
 }
