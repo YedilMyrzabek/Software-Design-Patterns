@@ -27,9 +27,9 @@ public class Main {
         //Builder Pattern
         System.out.println("Builder Pattern: ");
         House house = new House.Builder()
-                .setRooms(3)
-                .setFloors(2)
-                .setPool(true)
+                .setRooms(6)
+                .setFloors(1)
+                .setPool(false)
                 .setGarage(false)
                 .build();
         System.out.println(house);
@@ -58,9 +58,8 @@ public class Main {
         System.out.println();
 
         //Factory Method Pattern
-        //
         Scanner sc = new Scanner(System.in);
-        System.out.println("Select delivery method (only digigt): ");
+        System.out.println("Select delivery method (only digit): ");
         System.out.println("1. land delivery");
         System.out.println("2. water delivery");
         System.out.println("3. air delivery");

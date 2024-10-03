@@ -56,4 +56,6 @@ public class House {
                 + " floors: " + hasPool
                 + ", garage: " + hasGarage;
     }
+
+    /*The Builder pattern allows us to construct complex objects step by step*/
 }

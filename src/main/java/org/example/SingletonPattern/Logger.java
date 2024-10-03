@@ -15,4 +15,6 @@ public class Logger {
     public void log(String ms) {
         System.out.println("Log: " + ms);
     }
+
+    /*The Singleton pattern ensures that only one instance of the Logger class is created*/
 }
