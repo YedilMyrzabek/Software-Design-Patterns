@@ -5,13 +5,13 @@ public class CareTaker {
 
     // Method to save the memento
     public void saveMemento(Memento memento) {
-        System.out.println("Caretaker: Saving Memento...");
+        // Saving Memento
         this.memento = memento;
     }
 
     // Method to get the saved memento
     public Memento getMemento() {
-        System.out.println("Caretaker: Restoring from Memento...");
+        // Restoring from Memento
         return memento;
     }
 }
