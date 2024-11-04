@@ -1,6 +1,6 @@
 package org.example.AbstractFactory;
 
 // Abstract factory
-interface ProductFactory {
+public interface ProductFactory {
     Product createProduct();
 }

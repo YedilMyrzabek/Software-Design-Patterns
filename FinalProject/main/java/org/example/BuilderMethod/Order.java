@@ -1,7 +1,7 @@
 package org.example.BuilderMethod;
 
 // Order class with builder for flexible creation
-class Order {
+public class Order {
     private String product;
     private int quantity;
     private String paymentMethod;
