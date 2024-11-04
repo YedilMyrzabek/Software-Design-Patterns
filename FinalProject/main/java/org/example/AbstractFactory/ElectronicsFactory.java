@@ -1,6 +1,6 @@
 package org.example.AbstractFactory;
 
-// Concrete factories for each product type
+// Concrete factories for product type
 class ElectronicsFactory implements ProductFactory {
 
     @Override
