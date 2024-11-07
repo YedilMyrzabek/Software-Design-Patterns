@@ -1,23 +1,23 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class CategoryGroup implements CategoryInteface{
+public class CategoryGroup implements CategoryInterface {
     private String name;
-    private List<CategoryInteface> categories = new ArrayList<>();
+    private List<CategoryInterface> categories = new ArrayList<>();
 
-    public CategoryGroup(String name){
+    public CategoryGroup(String name) {
         this.name = name;
     }
 
-    public void addCategory(CategoryInteface categoryInteface){
-        categories.add(categoryInteface);
+    public void addCategory(CategoryInterface category) {
+        categories.add(category);
     }
 
     @Override
-    public void showCategory(){
+    public void showCategory() {
         System.out.println("Category group: " + name);
-        for (CategoryInteface categoryInteface : categories){
-            categoryInteface.showCategory();
+        for (CategoryInterface category : categories) {
+            category.showCategory();
         }
     }
 }
