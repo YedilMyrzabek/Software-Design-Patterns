@@ -1,4 +1,4 @@
-package org.example.AbstractFactory;
+package org.example.Model.AbstractFactory;
 
 // Concrete product classes
 class Electronics extends Product {

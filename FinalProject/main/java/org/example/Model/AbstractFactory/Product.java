@@ -1,4 +1,4 @@
-package org.example.AbstractFactory;
+package org.example.Model.AbstractFactory;
 
 // Abstract product classes
 public abstract class Product {

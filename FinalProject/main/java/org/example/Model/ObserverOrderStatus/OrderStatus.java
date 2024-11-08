@@ -1,15 +1,10 @@
+package org.example.Model.ObserverOrderStatus;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserNotification implements OrderObserver {
-    @Override
-    public void update(String status) {
-        System.out.println("User notified: Order status is now " + status);
-    }
-}
-
 // Subject class for order
-class OrderStatus {
+public class OrderStatus {
     private List<OrderObserver> observers = new ArrayList<>();
     private String status;
 

@@ -1,4 +1,4 @@
-package org.example.ProxyPattern;
+package org.example.Model.ProxyPattern;
 
 // Proxy with caching mechanism
 public class ProductDataProxy implements ProductDataAccess {

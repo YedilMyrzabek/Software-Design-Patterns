@@ -1,4 +1,4 @@
-package org.example.AbstractFactory;
+package org.example.Model.AbstractFactory;
 
 // Concrete factories for product type
 public class ClothingFactory implements ProductFactory {

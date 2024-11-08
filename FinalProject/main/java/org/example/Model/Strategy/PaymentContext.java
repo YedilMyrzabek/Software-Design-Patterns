@@ -1,4 +1,6 @@
-class PaymentContext {
+package org.example.Model.Strategy;
+
+public class PaymentContext {
     private PaymentStrategy paymentStrategy;
 
     public PaymentContext(PaymentStrategy paymentStrategy) {

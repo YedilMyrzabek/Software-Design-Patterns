@@ -1,3 +1,5 @@
+package org.example.Model.Composite;
+
 public class SingleCategory implements CategoryInterface {
     private String name;
 

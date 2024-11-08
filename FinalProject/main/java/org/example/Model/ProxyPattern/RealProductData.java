@@ -1,4 +1,4 @@
-package org.example.ProxyPattern;
+package org.example.Model.ProxyPattern;
 
 // Real product data access class
 class RealProductData implements ProductDataAccess {

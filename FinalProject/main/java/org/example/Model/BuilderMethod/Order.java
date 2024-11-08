@@ -1,4 +1,4 @@
-package org.example.BuilderMethod;
+package org.example.Model.BuilderMethod;
 
 // Order class with builder for flexible creation
 public class Order {

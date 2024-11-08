@@ -1,3 +1,5 @@
+package org.example.Model.Strategy;
+
 public class PayPalPayment implements PaymentStrategy{
     @Override
     public void pay(double amount) {
